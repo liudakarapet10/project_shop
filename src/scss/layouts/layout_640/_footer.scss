@@ -1,0 +1,68 @@
+.footer-box {
+  width: 100%;
+  background-color: $grey;
+
+  &__logo-box {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__logo {
+    height: 100%;
+  }
+}
+
+.footer {
+  &__menu {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__menu-box {
+    padding-left: 0;
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .about_us {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .blog {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .contact {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .policy {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .faqs {
+    grid-template: 1;
+    grid-row: 3;
+  }
+}
+
+.footer__form-box {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.map {
+  width: 60%;
+}

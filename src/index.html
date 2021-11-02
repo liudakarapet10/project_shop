@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header-box">
+
+        <nav class="menu">
+          <ul class="menu-box menu_besktop">
+            <li class="menu-box__item has-submenu">
+              <a href="#" class="menu-box__link" href="#">
+                Home
+              </a>
+              <ul>
+                <li><a class="menu-box__a" href="#">Home Default </a></li>
+                <li><a class="menu-box__a" href="#">Home Default (Classic Product Item) </a></li>
+                <li><a class="menu-box__a" href="#">Home Modern </a></li>
+                <li><a class="menu-box__a" href="#">Collections slider </a></li>
+                <li><a class="menu-box__a" href="#">Full-screen slider</a></li>
+                <li><a class="menu-box__a" href="#">Coming Soon Splash </a></li>
+              </ul>
+            </li>
+            <li href="#" class="menu-box__item  has-submenu">
+              <a class="menu-box__link" href="#">
+                Features
+              </a>
+              <ul>
+                <li><a class="menu-box__a" href="#">Offcanvas header menu</a></li>
+                <li><a class="menu-box__a" href="#">Left logo header</a></li>
+                <li><a class="menu-box__a" href="#">Header with Top Bar (Languages & Currency)</a></li>
+                <li><a class="menu-box__a" href="#">RTL + No animation</a></li>
+              </ul>
+            </li>
+            <li href="#" class="menu-box__item  has-submenu">
+              <a class="menu-box__link" href="#">
+                The Shop
+              </a>
+              <ul>
+                <li><a class="menu-box__a" href="#">Shop Layout</a></li>
+                <li><a class="menu-box__a" href="#">Product Type</a></li>
+                <li><a class="menu-box__a" href="#">Producy Layout</a></li>
+              </ul>
+            </li>
+            <li href="#" class="menu-box__item  has-submenu">
+              <a class="menu-box__link" href="#">
+                The Blog
+              </a>
+            </li>
+          </ul>
+        </nav> 
+
+        
+        <div class="logo-box">
+          <img class="logo-box__logo" src="i/logo_x56.png"> 
+        </div> 
+
+        <a href="#" class="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <nav class="nav nav-desktop">
+          <ul class="nav-box">
+            <li class="nav-box__item one">
+              <a class="nav-box__link nav-box__link_user" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-box__item two">
+              <a class="nav-box__link nav-box__link_search" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-box__item three">
+              <a class="nav-box__link nav-box__link_heart" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-box__item four">
+              <a class="nav-box__link nav-box__link_basket" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#basket"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav> 
+
+        <!---Desctop menu end-->
+
+        <div class="white-overlay"></div>
+
+        <div class="mobile-menu">
+          <a href="#" class="menu-button in-mobile active">
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+          </a>
+        
+        
+          <nav class="mobile-navigation">
+            <ul class="menu-box">
+              <li class="menu-box__item has-submenu">
+                <a href="#" class="menu-box__link is-submenu">
+                  Home
+                </a>
+                <ul>
+                  <li><a href="#">Home Default </a></li>
+                  <li><a href="#">Home Default (Classic Product Item) </a></li>
+                  <li><a href="#">Home Modern </a></li>
+                  <li><a href="#">Collections slider </a></li>
+                  <li><a href="#">Full-screen slider</a></li>
+                  <li><a href="#">Coming Soon Splash </a></li>
+                </ul>
+              </li>
+              <li href="#" class="menu-box__item  has-submenu">
+                <a class="menu-box__link is-submenu" href="#">
+                  Features
+                </a>
+                <ul>
+                  <li><a href="#">Offcanvas header menu</a></li>
+                  <li><a href="#">Left logo header</a></li>
+                  <li><a href="#">Header with Top Bar (Languages & Currency)</a></li>
+                  <li><a href="#">RTL + No animation</a></li>
+                </ul>
+              </li>
+              <li href="#" class="menu-box__item  has-submenu">
+                <a class="menu-box__link is-submenu" href="#">
+                  The Shop
+                </a>
+                <ul>
+                  <li><a href="#">Shop Layout</a></li>
+                  <li><a href="#">Product Type</a></li>
+                  <li><a href="#">Producy Layout</a></li>
+                </ul>
+              </li>
+              <li href="#" class="menu-box__item  has-submenu">
+                <a class="menu-box__link is-submenu" href="#">
+                  The Blog
+                </a>
+              </li>
+            </ul>
+          </nav> 
+
+
+        <nav class="nav">
+          <ul class="nav-box">
+            <li class="nav-box__item one">
+              <a class="nav-box__link nav-box__link_user" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-box__item two">
+              <a class="nav-box__link nav-box__link_search" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-box__item three">
+              <a class="nav-box__link nav-box__link_heart" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-box__item four">
+              <a class="nav-box__link nav-box__link_basket" href="#">
+                <svg class="nav-box__svg-icon">
+                  <use xlink:href="svg/sprite_icons.svg#basket"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav> 
+       
+      </header> 
+       <!-- -------.header-------- --> 
+
+
+       <!-----------section---------->
+      <section class="section-box">
+
+        <!-----------article one---------->
+
+        <article class="article-one" id="slider">
+          <div  class="article-one__slider">
+            <div class="article-one__img-box">
+              <img class="article-one__img" src="i/slide_1.jpg">
+            </div>
+            <div class="article-one__title-box">
+              <p class="article-one__title">New arrivals</p>
+              <p class="article-one__par">New portable bluetooth speaker</p>
+              <a class="article-one__link">Shop now</a>
+            </div>  
+          </div> 
+          <div  class="article-one__slider">
+            <div class="article-one__img-box">
+              <img class="article-one__img" src="i/slide_2.jpg">
+            </div>  
+            <div class="article-one__title-box center">
+              <p class="article-one__title">November sales</p>
+              <p class="article-one__par">Clearance Sales Up to 30% Off</p>
+              <a class="article-one__link">Shop now</a>
+            </div>  
+          </div> 
+          <div  class="article-one__slider">
+            <div class="article-one__img-box">
+              <img class="article-one__img" src="i/slide_3.jpg">
+            </div>
+            <div class="article-one__title-box">
+              <p class="article-one__title">Living room</p>
+              <p class="article-one__par">New Autumn Furniture Collection</p>
+              <a class="article-one__link">Explore</a>
+            </div>  
+          </div>  
+        </article>
+        <!-----------.article one---------->
+
+        <!-----------article two---------->
+        <article class="article-two">
+          <div class="article-two__conteiner row_one">
+            <div class="article-two__image-box">
+              <img class="article-two__image" src="i/grid_1/grid_one_1.jpg">
+            </div>
+            <div class="article-two__content">
+              <p class="article-two__products">8 products</p>
+              <h2 class="article-two__name">Living room</h2>
+            </div> 
+          </div>
+
+          <div class="article-two__conteiner row_two">
+            <div class="article-two__image-box">
+              <img class="article-two__image" src="i/grid_1/grid_one_2.jpg">
+            </div>
+            <div class="article-two__content">
+              <p class="article-two__products">4 products</p>
+              <h2 class="article-two__name">Accessories</h2>
+            </div> 
+            <div class="article-two__sale-box">
+              <p class="article-two__sale">Sale 30%</p>
+              <div id="timer" class="article-two__timer" ></div>
+            </div>
+          </div>
+
+          <div class="article-two__conteiner row_three">
+            <div class="article-two__image-box">
+              <img class="article-two__image" src="i/grid_1/grid_one_3.jpg">
+            </div>
+            <div class="article-two__content">
+              <p class="article-two__products">4 products</p>
+              <h2 class="article-two__name">Bathroom</h2>
+            </div> 
+          </div>
+
+          <div class="article-two__conteiner row_four">
+            <div class="article-two__image-box">
+              <img class="article-two__image" src="i/grid_1/grid_one_4.jpg">
+            </div>
+            <form class="article-two__form">
+              <span class="article-two__color">
+                <input class="article-two__color-input" type="radio" id="beats_pill_pink" name="color" value="pink">
+                <label class="article-two__color-label pink" for="beats_pill_pink"></label>
+              </span>
+              <span class="article-two__color">
+                <input class="article-two__color-input" type="radio" id="beats_pill_black" name="color" value="black">
+                <label class="article-two__color-label black" for="beats_pill_black"></label>
+              </span>
+            </form>
+            <div class="article-two__content">
+              <p class="article-two__products">3 products</p>
+              <h2 class="article-two__name">Kitchen</h2>
+            </div>
+          </div>
+        </article>
+        <!-----------.article two---------->
+
+        <!-----------article three---------->
+        <article class="article-three">
+          <div class="article-three__title-box">
+            <h2 class="article-three__title">Recent Products</h2>
+            <p class="article-three__text">Recent posuere neque eu lectus ultrices</p>
+          </div>
+
+          <div class="article-three__conteiner first">
+            <div class="article-three__image-headphone">
+              <img class="article-three__image" src="i/grid_2/grid1.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Libero Headphones</h2>
+              <p class="article-three__price">&#36;499</p>
+            </div>
+          </div>   
+
+          <div class="article-three__conteiner second">
+            <div class="article-three__image-elephant">
+               <img class="article-three__image" src="i/grid_2/grid2.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Elephant Chair</h2>
+              <p class="article-three__price">&#36;169 -&#36;850</p>
+            </div>
+          </div> 
+
+          <div class="article-three__conteiner third">
+            <div class="article-three__image-lamp">
+             <img class="article-three__image" src="i/grid_2/grid3.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Multiple Spot Table Lamps</h2>
+              <p class="article-three__price">&#36;40 - &#36;59</p>
+            </div>
+          </div>
+          
+          <div class="article-three__conteiner fourth">
+            <div class="article-three__image-speaker">
+              <img class="article-three__image" src="i/grid_2/grid4.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Portavble Bluetooth Speaker</h2>
+              <p class="article-three__price">&#36;249</p>
+            </div>
+          </div>  
+
+          <div class="article-three__conteiner fifth">
+            <div class="article-three__image-chair">
+              <img class="article-three__image" src="i/grid_2/grid5.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Lounge Chair</h2>
+              <p class="article-three__price">&#36;499</p>
+            </div>
+          </div>  
+
+          <div class="article-three__conteiner sixth">
+            <div class="article-three__image-armchair">
+              <img class="article-three__image" src="i/grid_2/grid6.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Fusce Porta Armchair</h2>
+              <p class="article-three__price">&#36;2,350</p>
+            </div>
+          </div>  
+
+          <div class="article-three__conteiner seventh">
+            <div class="article-three__image-clock">
+              <img class="article-three__image" src="i/grid_2/grid7.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Decorative Alarm Clock</h2>
+              <p class="article-three__price">&#36;65</p>
+            </div>
+          </div>  
+
+          <div class="article-three__conteiner eight">
+            <div class="article-three__image-plastic_chair">
+              <img class="article-three__image" src="i/grid_2/grid8.1.jpg">
+            </div>
+            <div class="article-three__content">
+              <h2 class="article-three__name">Molded Plastic Armchair</h2>
+              <p class="article-three__price">&#36;560</p>
+            </div>
+          </div>  
+
+        </article> 
+        <!-----------.article three---------->
+
+        <!-----------article four---------->
+        <article class="article-four">
+          <div class="article-four__text-box">
+            <h2 class="article-four__title">It's all New,
+              It all arrived this week</h2>
+            <p class="article-four__content">Furniture axe heirloom ethical man bun sustainable. Pickled 
+              normcore selvage, bespoke four dollar toast neutra chartreuse 
+              vinyl.</p>
+            <a class="article-four__btn-link"> 
+              <button class="article-four__btn">View all new products</button>
+            </a> 
+          </div>
+
+          <div class="article-four__container-box">
+            <div class="article-four__container one">
+              <div class="article-four__img-box">
+                <img  class="article-four__img" src="i/room3.jpg">
+              </div>
+              <div class="article-four__content-box">
+                <h3 class="article-four__name">Visit Us</h3>
+                <p class="article-four__text">Head Office 16 Boulevard Saint-Germain 75005 Paris</p>
+              </div>
+            </div>
+
+            <div class="article-four__container two">
+              <div class="article-four__img-box">
+                <img class="article-four__img" src="i/chair2.jpg">
+              </div>
+              <div class="article-four__content-box">
+                <h3 class="article-four__name">Follow Our Store On Instagram</h3>
+                <a class="article-four__text ins">@roartheme</a>
+              </div>
+            </div>
+          </div>
+
+        </article>
+        <!-----------.article four---------->
+
+      </section>
+
+       <!----------.section---------->
+
+
+       <!-----------footer---------->
+       <footer class="footer-box">
+         <div class="footer-box__logo-box">
+           <img class="footer__logo" src="i/logo_x56.png"> 
+         </div>  
+
+         <nav class="footer__menu">
+          <ul class="footer__menu-box">
+            <li class="footer__menu__item">
+              <a class="footer__menu__link  about_us" href="#">
+                    About us
+              </a>
+            </li>
+            <li class="footer__menu__item">
+              <a class="footer__menu__link  blog" href="#">
+                   Read Our Blog
+              </a>
+            </li>
+            <li class="footer__menu__item">
+              <a class="footer__menu__link contact" href="#">
+                   Contact Us
+              </a>
+            </li>
+            <li class="footer__menu__item">
+              <a class="footer__menu__link policy" href="#">
+                 Policy
+              </a>
+            </li>
+            <li class="footer__menu__item">
+              <a class="footer__menu__link faqs" href="#">
+               FAQS
+              </a>
+            </li>  
+          </ul>
+        </nav>
+
+        <div class="footer__form-box">
+          <form method="post" action="" name="emailForm" class="footer__form" id="footer-form" >
+            <input type="text" placeholder="Email address" name="UsereEmail" id="userEmail"  class="footer__inp"/>
+            <input type="submit" value="Submit" id="btn-submit" />
+          </form>
+        </div>
+ 
+        <nav class="footer__nav">
+          <ul class="footer__nav-box">
+            <li class="footer__item">
+              <a class="footer__link fb" href="#">
+                <svg class="footer__svg-icon">
+                  <use xlink:href="svg/sprite_links.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>  
+            <li class="footer__item">
+              <a class="footer__link ins" href="#">
+                <svg class="footer__svg-icon">
+                  <use xlink:href="svg/sprite_links.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link tw" href="#">
+                <svg class="footer__svg-icon">
+                  <use xlink:href="svg/sprite_links.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link pt" href="#">
+                <svg class="footer__svg-icon">
+                  <use xlink:href="svg/sprite_links.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav> 
+
+
+        <div class="map" id="map"></div>
+
+        <div class="footer__coperight-box">
+          <p class="footer__coperight-box">&copy; 2021 Barberry. All rights reserved.</p>
+        </div> 
+
+        <div class="scroll-top" id="scroll-top"></div>
+      
+
+        </footer>
+       <!----------.footer---------->
+
+    </div>
+    <!--  JavaScript here -->
+    <!-- <script src="js/app.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/ssm.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

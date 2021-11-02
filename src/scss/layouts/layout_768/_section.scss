@@ -1,0 +1,17 @@
+.article-box {
+  &__title-box {
+    left: 13%;
+    top: 30%;
+    width: 50%;
+  }
+
+  &__title {
+    font-size: $menuFontSize;
+    margin-bottom: 15px;
+  }
+
+  &__par {
+    margin-bottom: 15px;
+    font-size: $menuFontSize;
+  }
+}

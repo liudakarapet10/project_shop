@@ -1,0 +1,44 @@
+.header-box {
+}
+
+.logo-box {
+  flex: 25%;
+
+  &__logo {
+    height: 100%;
+  }
+}
+
+.menu-box {
+  display: contents;
+  flex: 60%;
+  list-style-type: none;
+  display: flex;
+
+  &__link {
+    text-decoration: none;
+    margin-left: 20px;
+    color: $gold;
+  }
+  &__link:last-of-type {
+    margin-right: 0;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__a {
+    color: $gold;
+    cursor: pointer;
+  }
+}
+.nav {
+  flex: 15%;
+  padding: 0;
+
+  &-box {
+    margin-left: 40px;
+  }
+}

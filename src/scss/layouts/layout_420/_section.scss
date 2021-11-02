@@ -1,0 +1,21 @@
+.article-one {
+  &__title-box {
+    top: 25%;
+    width: 40%;
+  }
+
+  .center {
+    left: 20%;
+  }
+}
+
+.article-two {
+  &__sale {
+    margin: 10px 0 5px 0;
+    font-size: $menuFontSize;
+  }
+
+  &__timer {
+    font-size: $menuFontSize;
+  }
+}
